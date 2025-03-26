@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": [
+      "minecraft:glass"
+    ],
+    "result": {
+      "id": "minecraft:poisonous_potato"
+    },
+    "experience": 0,
+    "cookingtime": 600
+}
