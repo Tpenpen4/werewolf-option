@@ -1,11 +1,29 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
+[
+  {
+    "condition": "minecraft:location_check",
     "predicate": {
-      "location": {
-        "fluid": {
-          "fluids": "minecraft:water"
+      "position": {
+        "x": {
+          "min": -224,
+          "max": -223
+        },
+        "y": 66,
+        "z": {
+          "min": -295,
+          "max": -294
         }
       }
     }
-}
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "stepping_on": {
+        "fluid": {
+          "fluids": "#minecraft:water"
+        }
+      }
+    }
+  }
+]

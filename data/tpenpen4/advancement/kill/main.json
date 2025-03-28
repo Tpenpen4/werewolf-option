@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "1": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "1"
+    ]
+  ],
+  "rewards": {
+    "function": "tpenpen4:allow"
+  }
+}

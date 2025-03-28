@@ -11,11 +11,10 @@ tellraw @p[scores={shift=240}] ["",{"text":"進捗：80%"}]
 tellraw @p[scores={shift=270}] ["",{"text":"進捗：90%"}]
 tellraw @p[scores={shift=300}] ["",{"text":"進捗：100%"}]
 # 以下、矢を奪う
-execute as @a if predicate tpenpen4:kill run clear @p arrow
-execute as @a if predicate tpenpen4:kill run schedule function tpenpen4:givearrow 15s append
+
 # アイテム検知
-execute store success score #condition condition run kill @e[predicate=tpenpen4:diamond_block,name="青くなったジャガイモ"]
+execute store success score #condition condition run kill @e[predicate=tpenpen4:diamond_block,nbt={Item:{id:"minecraft:poisonous_potato"}}]
 execute if score #condition condition matches 1 run tellraw @a ["",{"text":"おお！ありがとう！"}]
 
 # 以下、ネタ要素
-# execute as @a if predicate tpenpen4:w run kill @s[x=-224,y=66,z=-295]
+execute as @a if predicate tpenpen4:neta run kill @a
